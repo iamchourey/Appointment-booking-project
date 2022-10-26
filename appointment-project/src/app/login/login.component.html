@@ -1,0 +1,41 @@
+<app-header></app-header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<section>
+    <div class="imgBx">
+        <!-- <img src="./../../../../6-3.jpg"> -->
+    </div>
+    <div class="contentBx">
+        <div class="formBx">
+            <h2>Login</h2>
+            <form (ngSubmit)="onSubmit()">
+                <div class="inputBx">
+                    <span>Username</span>
+                    <input [(ngModel)]="credentials.username" name="username" required type="text">
+                </div>
+                <div class="inputBx">
+                    <span>Password</span>
+                    <input [(ngModel)]="credentials.password" type="text" name="password">
+                </div>
+                <div class="remember">
+                    <label>
+                        <input type="checkbox" name="">
+                        Remember me
+                    </label>
+                </div>
+                <div class="inputBx">
+                    <input type="submit" value="Submit" name="">
+                </div>
+                <div class="inputBx">
+                    <p>Don't have an account? <a routerLinkActive="active" routerLink="/signup">Sign Up</a></p>
+                </div>
+            </form>
+            <h3>Login with social media</h3>
+            <ul class="sci">
+                <button type="button" class="btn btn-social-icon btn-outline-facebook"><i class="fa fa-facebook"></i></button>
+                <button type="button" class="btn btn-social-icon btn-outline-youtube"><i class="fa fa-instagram"></i></button>                                        
+                <button type="button" class="btn btn-social-icon btn-outline-twitter"><i class="fa fa-google"></i></button>
+            </ul>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

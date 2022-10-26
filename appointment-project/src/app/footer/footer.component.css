@@ -1,0 +1,12 @@
+.footer {
+  font-size: 0.9rem;
+  background:rgba(17, 219, 207,0.8);
+}
+.footer .btn-back{
+  background: #fff;
+  color: #00d9ff;
+}
+.footer .text{
+  margin-right: 10px;
+  color: black;
+}

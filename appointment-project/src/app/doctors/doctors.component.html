@@ -1,0 +1,79 @@
+<app-header></app-header>
+<div class="">
+    <div class="list">
+      <h2>Doctors List</h2>
+      <div *ngFor="let doctor of doctors" class="list-item">
+        <div class="image-box">
+          <img src="{{doctor.image}}" alt="avatar">
+        </div>
+        <div class="content">
+          <h2 class="rank"><small>#</small>{{doctor.id}}</h2>
+          <h3>{{doctor.id}}.{{doctor.name}}</h3>
+          <p style="font-weight: bold;">{{doctor.speciality}}</p>
+          <p>{{doctor.description}}</p>
+        </div>
+      </div>
+      </div>
+  </div>
+  
+
+
+
+
+
+  <!-- <div class="">
+    <div *ngFor="let doctor of doctors" class="list">
+      <h3>Doctors List</h3>
+      <div class="list-item">
+        <div class="image-box">
+          <img src="https://i.pravatar.cc/100?img=59" alt="avatar">
+        </div>
+        <div class="content">
+          <h2 class="rank"><small>#</small>1</h2>
+          <h4>Vishal Chourey</h4>
+          <p>Surgeon</p>
+          <p>Done his mbbbs from xyz university has kcudwfdytf8712e5n iuwyucfncjhwuyewgd iud75766987e9831798e kjhdcgytewfd863286832 iuyyuft76e76t iuewt njnciuheygfytfwiujcnueyureft 98765432kjnchcyuw niuytrdcvbnmkoiuytrdcvbnmk kuytdcvnmk</p>
+        </div>
+      </div>
+      <div class="list-item">
+        <div class="image-box">
+          <img src="https://i.pravatar.cc/100?img=49" alt="avatar">
+        </div>
+        <div class="content">
+          <h2 class="rank"><small>#</small>2</h2>
+          <h4>ABC</h4>
+          <p>Orthopedician</p>
+        </div>
+      </div>
+      <div class="list-item">
+        <div class="image-box">
+          <img src="https://i.pravatar.cc/100?img=36" alt="avatar">
+        </div>
+        <div class="content">
+          <h2 class="rank"><small>#</small>3</h2>
+          <h4>DEF</h4>
+          <p>Dentist</p>
+        </div>
+      </div>
+      <div class="list-item">
+        <div class="image-box">
+          <img src="https://i.pravatar.cc/100?img=13" alt="avatar">
+        </div>
+        <div class="content">
+          <h2 class="rank"><small>#</small>4</h2>
+          <h4>GHI</h4>
+          <p>Gastrologist</p>
+        </div>
+      </div>
+      <div class="list-item">
+        <div class="image-box">
+          <img src="https://i.pravatar.cc/100?img=1" alt="avatar">
+        </div>
+        <div class="content">
+          <h2 class="rank"><small>#</small>5</h2>
+          <h4>JKL</h4>
+          <p>NeuroSurgeon</p>
+        </div>
+      </div>
+    </div>
+  </div> -->

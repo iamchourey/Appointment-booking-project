@@ -1,0 +1,24 @@
+<app-header></app-header>
+<br>
+<h2 style="text-align: center;"> Your all scheduled appointments</h2>
+<br>
+<table class = "table table-striped container">
+    <thead>
+        <tr>
+            <th> Patient Name</th>
+            <th> Doctor Name </th>
+            <th> Date and Time</th>
+            <th> Actions </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let appointment of appointments" >
+            <td> {{ appointment.name }} </td>
+            <td> {{ appointment.doctorName }} </td>
+            <td> {{ appointment.date }} {{ appointment.time }} </td>
+            <td>
+                <button (click) = "deleteAppointment(appointment.name)" class = "btn btn-info"> Cancel Appointment</button>
+            </td>
+        </tr>
+    </tbody>
+</table>

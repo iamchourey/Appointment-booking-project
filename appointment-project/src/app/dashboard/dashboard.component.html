@@ -1,0 +1,101 @@
+<app-header></app-header>
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Consultation</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body> 
+   <!-- ======= Hero Section ======= -->
+   <section id="hero" class="d-flex align-items-center">
+    <div class="container text-center position-relative">
+      <h1>24/7 Care is available</h1>
+      <h2>The Highest Quality Healthcare facility you trust to care for those you love. </h2>
+      <a style="color:white" class="main-btn">Get Started</a>
+    </div>
+  </section>
+  <!-- End Hero -->
+  <div class="container mt-4 p-4">
+      <div class="row">
+          <div class="col-md-6">
+              <h1 class="text-center my-4">
+                  Find Consultations
+              </h1>
+              <form (ngSubmit)="saveAppointment()">
+                  <div class="form-group row">
+                      <label class="col-sm-4 col-lg-4">
+                          Patient Name
+                      </label>
+                      <div class="col-sm-8 col-lg-8">
+                          <input [(ngModel)]="appointment.name" type="text"name="patient-name"class="form-control"
+                          placeholder="Name"required>
+                      </div>
+                  </div>
+                  <!---->
+                  <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                        Contact
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input [(ngModel)]="appointment.contact" type="tel"name="contact"class="form-control"
+                        placeholder="123"required>
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                      Enter Doctor's Name
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input [(ngModel)]="appointment.doctorName" type="text" name="doctorName"class="form-control">           
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                      Date
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input [(ngModel)]="appointment.date" type="date" data-date-format="DD MMMM YYYY" name="date"class="form-control">
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Time
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <input [(ngModel)]="appointment.time" type="time" name="time"class="form-control">
+                       </div>
+                </div>
+                <!---->
+                <div class="form-group row">
+                    <label class="col-sm-4 col-lg-4">
+                       Symptoms
+                    </label>
+                    <div class="col-sm-8 col-lg-8">
+                        <textarea [(ngModel)]="appointment.symptoms" name="symptoms" class="form-control" required></textarea>
+                    </div>
+                </div>
+                <!---->
+                <div class="form-group row justify-content-end">
+                    <div class="col-sm-5">
+                        <button type="submit"class="btn btn-form">
+                            Confirm
+                        </button>
+                    </div>
+                </div>
+                
+              </form>
+          </div>
+          <div class="col-md-6">
+              <h2 id="services" class="text-center my-4"></h2>
+              <ul id="consultations"class="list-group"></ul>
+          </div>
+      </div>
+  </div>
+  <app-footer></app-footer>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/doctorList-service"/>
+		<item value="https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/Autentication-service"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="github.com"/>
+		<item value="git.eclipse.org"/>
+		<item value="git-codecommit.ap-south-1.amazonaws.com"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="stlit &lt;stlit@wtc-lix-vishalch&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="stlit &lt;stlit@wtc-lix-vishalch&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="sortItemState" value="false"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="/home/stlit/Desktop/Doctor-Appointment-Project/aws/Autentication-service/.git">
+			<item value="empty"/>
+		</list>
+		<list key="/home/stlit/Desktop/Doctor-Appointment-Project/aws/doctorList-service/.git">
+			<item value="empty"/>
+		</list>
+	</section>
+</section>

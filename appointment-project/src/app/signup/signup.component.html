@@ -1,0 +1,44 @@
+<app-header></app-header>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<section>
+    <div class="imgBx">
+        <!-- <img src="./../../../../6-3.jpg"> -->
+    </div>
+    <div class="contentBx">
+        <div class="formBx">
+            <h2>Sign Up</h2>
+            <form (ngSubmit)="signUp()">
+                <div class="inputBx">
+                    <span>Username</span>
+                    <input [(ngModel)]="patient.username" type="text" name="username">
+                </div>
+                <div class="inputBx">
+                    <span>Name</span>
+                    <input [(ngModel)]="patient.name" type="text" name="name">
+                </div>
+                <div class="inputBx">
+                    <span>E-mail</span>
+                    <input [(ngModel)]="patient.email" type="text" name="email">
+                </div>
+                <div class="inputBx">
+                    <span>Phone Number</span>
+                    <input [(ngModel)]="patient.phone" type="text" name="phone">
+                </div>
+                <div class="inputBx">
+                    <span>Password</span>
+                    <input [(ngModel)]="patient.password" type="text" name="password">
+                </div>
+                <div class="inputBx">
+                    <input type="submit" value="Register" name="submit">
+                </div>
+            </form>
+            <h3>Login with social media</h3>
+            <ul class="sci">
+                <button type="button" class="btn btn-social-icon btn-outline-facebook"><i class="fa fa-facebook"></i></button>
+                <button type="button" class="btn btn-social-icon btn-outline-youtube"><i class="fa fa-instagram"></i></button>                                        
+                <button type="button" class="btn btn-social-icon btn-outline-twitter"><i class="fa fa-google"></i></button>
+            </ul>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>
